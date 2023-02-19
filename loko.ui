@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1177</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Локо</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>sql_maket/train.png</normaloff>sql_maket/train.png</iconset>
+  </property>
+  <widget class="QFrame" name="frame_21">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>881</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(50, 50, 50);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>831</width>
+      <height>263</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+border-radius: 15px;
+background-color: rgb(72, 73, 74)}
+
+QHeaderView::section {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    font-size: 11pt;
+	font-family: Times New Roman;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+QTableWidget::item {
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget::item:selected {
+	background-color: rgb(170, 255, 255);
+	color:rgb(0, 0, 0);
+}</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>166</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Вид ремонта</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Мастер</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Артикул</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Часов наката</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Дата</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>20</y>
+     <width>201</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/1loko.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>921</x>
+     <y>120</y>
+     <width>211</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/2loko.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_20">
+   <property name="geometry">
+    <rect>
+     <x>931</x>
+     <y>127</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+background-color: rgb(255, 157, 0)}
+
+QHeaderView::section {
+    background-color:  rgb(255, 255, 255);
+    padding: 4px;
+    font-size: 11pt;
+	font-family: Times New Roman;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+QTableWidget::item {
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget::item:selected {
+	background-color: rgb(170, 255, 255);
+	color:rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>180</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Сумм. кол-во часов</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_30">
+   <property name="geometry">
+    <rect>
+     <x>931</x>
+     <y>27</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+background-color: rgb(16, 0, 255)}
+
+QHeaderView::section {
+    background-color:  rgb(255, 255, 255);
+    padding: 4px;
+    font-size: 11pt;
+	font-family: Times New Roman;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+QTableWidget::item {
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget::item:selected {
+	background-color: rgb(170, 255, 255);
+	color:rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>180</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>№ локо</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>0</y>
+     <width>311</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/row.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>22</y>
+     <width>55</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/4.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>829</x>
+     <y>19</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/3.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>281</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/1.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>261</y>
+     <width>55</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sql_maket/2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>931</x>
+     <y>67</y>
+     <width>181</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>931</x>
+     <y>166</y>
+     <width>180</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>frame_21</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>tableWidget_30</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>label</zorder>
+  <zorder>tableWidget_20</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
