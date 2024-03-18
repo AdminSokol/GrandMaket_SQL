@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Logout</class>
+ <widget class="QWidget" name="Logout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Logout</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>train.ico</normaloff>train.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>921</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+border-radius: 15px;
+background-color: rgb(72, 73, 74)}
+
+QHeaderView::section {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    font-size: 11pt;
+	font-family: Times New Roman;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+QTableWidget::item {
+	background-color: rgb(255, 255, 255);
+}
+QTableWidget::item:selected {
+	background-color: rgb(170, 255, 255);
+	color:rgb(0, 0, 0);
+}</string>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>166</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Фамилия</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Дата и Время</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-6</x>
+     <y>-5</y>
+     <width>1001</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(50, 50, 50);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_kol">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>6</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>Последние 50 входов:</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>label_kol</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
